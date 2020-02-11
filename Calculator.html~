@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Calculator</title>
+
+<!-- for plotting we use flot -->
+<script src="./Calculator_files/jquery.js" type="text/javascript"></script>
+<script src="./Calculator_files/jquery.flot.js" type="text/javascript"></script>
+<!-- style of the page -->
+<link rel="stylesheet" href="./Calculator_files/style.css">
+
+<!-- we load a data file too -->
+<script src="./Calculator_files/primes.txt"></script>
+</head>
+
+<body>
+<h1>TARdYS S/N Calculator v.1.1</h1>
+
+<p>This page demonstrates a simple computation inside the browser
+with results displayed immediately on the same page, including a plot.
+
+</p><p>
+This calculator computes a product and then factorises the product into prime numbers.
+
+</p><fieldset><legend>Calculation Modes</legend>
+<form action="">
+  <input type="radio" name="gender" value="S/N Calculation"> S/N Calculation <br>
+  <input type="radio" name="gender" value="S/N vs. Magnitude"> S/N vs. Magnitude <br>
+  <input type="radio" name="gender" value="S/N vs. Wavelength"> S/N vs. Wavelength
+</form>
+</fieldset>
+
+</p><fieldset><legend>Input Parameters</legend>
+Exposure time:
+<span style="padding-left:100px">
+<input type="text" name="expotime" value="600"><br/>
+
+Number of Exposure:
+<span style="padding-left:58px">
+<input type="text" name="expotime" value="1"><br/>
+
+Seeing (FWHM) [arcsec]:
+<span style="padding-left:30px">
+<input type="text" name="expotime" value="1"><br/>
+
+Moon light: 
+<select name="moon">
+<option>No Moon</option>
+<option>Half Moon</option>
+<option>Full Moon</option>
+</select>
+<br>
+
+</p><fieldset><legend>Magnitude</legend>
+J[mag]:
+<span style="padding-left:80px">
+<input type="text" name="expotime" value="12"><br/>
+T_bb [K]:
+<span style="padding-left:65px">
+<input type="text" name="expotime" value="3000"><br/>
+
+<!-- Trigger/Open The Modal -->
+<button id="myBtn">Template</button>
+
+<!-- The template -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close"></span>
+    <p>Y[mag] = </p>
+  </div>
+</fieldset>
+</div>
+</fieldset>
+
+<fieldset><legend>Results</legend>
+<p>Product: <input type="text" name="outproduct" id="outproduct" value="" writeable="False">
+
+</p><p>Decomposition:
+</p><div id="decomposition"><ul><li>2</li><li>2</li><li>2</li><li>2</li><li>2</li><li>2</li><li>3</li><li>7</li></ul></div>
+<!-- html plot -->
+<p>Histogram:
+</p><div id="plot-container">
+<div id="placeholder" class="plot-placeholder" style="padding: 0px; position: relative;"><canvas class="flot-base" width="818" height="413" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 818px; height: 413px;"></canvas><div class="flot-text" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; font-size: smaller; color: rgb(84, 84, 84);"><div class="flot-x-axis flot-x1-axis xAxis x1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;"><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 62px; top: 395px; left: 6px; text-align: center;">1.5</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 62px; top: 395px; left: 72px; text-align: center;">2.0</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 62px; top: 395px; left: 138px; text-align: center;">2.5</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 62px; top: 395px; left: 205px; text-align: center;">3.0</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 62px; top: 395px; left: 271px; text-align: center;">3.5</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 62px; top: 395px; left: 338px; text-align: center;">4.0</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 62px; top: 395px; left: 404px; text-align: center;">4.5</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 62px; top: 395px; left: 470px; text-align: center;">5.0</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 62px; top: 395px; left: 537px; text-align: center;">5.5</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 62px; top: 395px; left: 603px; text-align: center;">6.0</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 62px; top: 395px; left: 670px; text-align: center;">6.5</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 62px; top: 395px; left: 736px; text-align: center;">7.0</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 62px; top: 395px; left: 803px; text-align: center;">7.5</div></div><div class="flot-y-axis flot-y1-axis yAxis y1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;"><div class="flot-tick-label tickLabel" style="position: absolute; top: 382px; left: 2px; text-align: right;">0</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 327px; left: 2px; text-align: right;">1</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 273px; left: 2px; text-align: right;">2</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 218px; left: 2px; text-align: right;">3</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 164px; left: 2px; text-align: right;">4</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 109px; left: 2px; text-align: right;">5</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 55px; left: 2px; text-align: right;">6</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 0px; left: 2px; text-align: right;">7</div></div></div><canvas class="flot-overlay" width="818" height="413" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 818px; height: 413px;"></canvas></div>
+</div>
+<p></p>
+</fieldset>
+
+<script>
+// stupid function for prime factorisation
+//   Uses the data array defined in primes.txt loaded above
+function factorise(n, others) {
+	if (n == 1) {
+		return others;
+	}
+	for (var i of primes) {
+		if (i > n)
+			break;
+		if (n % i == 0) {
+			r = n / i;
+			return factorise(r, others.concat([i]));
+		}
+	}
+	console.log("could not find any prime factor for ", n);
+	return n;
+}
+// main calculation function
+function recalc() {
+	var a = parseInt(document.getElementById('valuea').value);
+	var b = parseInt(document.getElementById('valueb').value);
+	// actual calculation
+	console.log("calculating with a=", a, " and b=", b, ".");
+	var prod = a*b;
+	console.log("result: ", prod);
+	var factors = factorise(prod, []);
+	console.log("factorised results: ", factors);
+	// store output
+	document.getElementById('outproduct').value = String(prod);
+	//    here we create a html list by writing html into the decomposition div
+	var content = "<ul>";
+	for (var f of factors) {
+		console.log("factor: ", f);
+		content += "<li>" + String(f);
+	}
+	document.getElementById('decomposition').innerHTML = content;
+	
+	// plot output: make histogram
+	var xmax = Math.max(...factors);
+	console.log("plotting until: ", xmax);
+	var series = [];
+	for (var i of primes) {
+		if (i > xmax) {
+			break;
+		}
+		var yi = 0;
+		for (var f of factors) {
+			if (f == i) {
+				console.log("factor ", i, " inside factorisation as ", f);
+				yi++;
+			}
+		}
+		series.push([i-0.5, 0]);
+		series.push([i-0.5, yi]);
+		series.push([i+0.5, yi]);
+		series.push([i+0.5, 0]);
+	}
+	console.log("plotting series: ", series);
+	$.plot("#placeholder", [ series ]);
+	
+	
+}
+recalc();
+</script>
+
+</body></html>

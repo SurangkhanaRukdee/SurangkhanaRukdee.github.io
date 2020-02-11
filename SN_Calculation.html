@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Calculator</title>
+
+<!-- for plotting we use flot -->
+<script src="./Calculator_files/jquery.js" type="text/javascript"></script>
+<script src="./Calculator_files/jquery.flot.js" type="text/javascript"></script>
+<!-- style of the page -->
+<link rel="stylesheet" href="./Calculator_files/style.css">
+
+<!-- we load data files too -->
+<script src="./Calculator_files/etc.js"></script>
+
+
+</head>
+
+<body>
+<h1>TARdYS S/N Calculator v.1.2</h1>
+
+<p>
+This calculator calculates signal to noise of TARdYS.
+The simulation is based on the location of the University of Tokyo Atacama Observatory (TAO)
+at the summit of Cerro Chanjnantor (5600 m).
+
+</p><fieldset><legend>Calculation Modes</legend>
+<ul>
+  <li> <a href="SN_Calculation.html">S/N Calculation</a>
+  <li> <a href="SN_Magnitude.html">S/N vs. Magnitude</a> 
+  <li> <a href="SN_Wavelength.html">S/N vs. Wavelength</a>
+</ul>
+</fieldset>
+
+</p><fieldset><legend>Input Parameters</legend>
+<table border="0">
+<tr><td>Exposure time:</td>   
+<td><input type="text" id="exptime" value="600"></td></tr>
+
+<tr><td>Number of Exposure:</td>   
+<td><input type="text" id="expnumber" value="1"></td></tr>
+
+<tr><td>Seeing (FWHM) [arcsec]:</td>   
+<td><input type="text" id="seeingnumber" value="1"></td></tr>
+
+<tr><td>Moon light:</td>
+<td>
+<select id="moon">
+<option>No Moon</option>
+<option>Half Moon</option>
+<option>Full Moon</option>
+</select>
+</td></tr>
+</table>
+
+</p><fieldset><legend>Magnitude</legend>
+
+<table border="0">
+<tr><td>J[mag]:</td>   
+<td><input type="text" id="J_mag" value="12"></td></tr>
+
+<tr><td>T_bb [K]:</td>   
+<td><input type="text" id="T_bb" value="3000"></td></tr>
+
+</table>
+
+<!-- Template Button -->
+<input type="submit" name="buttonname" id="buttonid" value="Template" onclick="Y_template_calc();" />
+
+<!--Initial Value-->
+<div id="modal-content">Y[mag] = ??</div>
+</fieldset>
+
+<fieldset><legend>Emission Line</legend>
+<table border="0">
+<tr><td>Rest Wavelength [um]:</td>   
+<td><input type="text" id="rest_wavelength" value="1.0"></td></tr>
+
+<tr><td>Line Flux [1e-18 W m<sup>-2</sup>]:</td>   
+<td><input type="text" id="line_flux" value="1"></td></tr>
+
+<tr><td>Doppler Shift [Km s<sup>-1</sup>]:</td>   
+<td><input type="text" id="doppler_shift" value="0"></td></tr>
+
+<tr><td>Line Width [Km s<sup>-1</sup>]:</td>   
+<td><input type="text" id="line_width" value="100"></td></tr>
+
+</table>
+</fieldset>
+
+</fieldset>
+
+<input type="submit" value="Calculate S/N" onclick="Calc_SN();" />
+
+<fieldset><legend>Results</legend>
+Signal-to-Noise values:
+<span style="padding-left:80px">
+<input type="text" id="Out_SN" value="??"><br/>
+
+</fieldset>
+<p><font size="2">This calculator is an adapted version of IGRINS ETC (Huynh Anh N. Le et al. 2015).
+</font></p><p><font size="2">Send questions and comments to surangkhanar@gmail.com
+</font></p>
+</body></html>

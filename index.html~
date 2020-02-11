@@ -1,0 +1,230 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Surangkhana Rukdee Buchner</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">Home</a></li>
+							<li><a href="generic.html">About Me</a></li>
+							<li><a href="#one">What I do</a></li>
+							<li><a href="#two">Projects</a></li>
+							<li><a href="#three">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<h1>Surangkhana (Rukdee) Buchner</h1>
+							<p>An astro-engineer, exoplaneteer, instrument designer.</p>
+							<span class = "image">
+								<img src="mypic.jpg" alt="" width="400" height="442">
+							</span>
+							<ul class="actions">
+								<li><a href="#one" class="button scrolly">Learn more</a></li>
+								<li><a href="https://ui.adsabs.harvard.edu/search/q=author%3A%22Rukdee%2C%20Surangkhana%22&sort=date%20desc%2C%20bibcode%20desc&p_=0" class = "button">Publications</a></li>
+								<li><a href="cv.html" class="button">CV</a></li>
+							</ul>
+							
+						</div>
+					</section>
+
+				<!-- One -->
+					<section id="one" class="wrapper style2 spotlights">
+						<section>
+							<a href="#" class="image">
+								<img src="images/optical_design.jpg" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Optical Design</h2>
+									<p>I design astronomical spectrographs and camera mostly Precise Radial Velocity (PRV) Instruments 
+									for exoplanets characterization in different wavelength: UV, Optical, NIR. My previous work in Chile with Prof. Leonardo Vanzi
+									includes FIDEOS, TARdYS and PLATOSPEC.</p>
+									<ul class="actions">
+										<li><a href="https://ui.adsabs.harvard.edu/abs/2019ExA...tmp...45R/abstract" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="images/opto_mec.jpg" alt="" data-position="top center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Optomechanical Design</h2>
+									<p>This is where I started my work in the field of astronomical instrumentation. I designed the optomechanical supports for 
+									the IGRINS mirror mounts and perform finite element analysis. Then I transfer my experience to help the design and construction of TARdYS.</p>
+									<ul class="actions">
+										<li><a href="https://ui.adsabs.harvard.edu/abs/2012JASS...29..233R/abstract" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="video">
+							<video width="400" height="360" autoplay="true" loop="true" muted="true">
+  								<source src="Tardys_Alignment_medium.m4v" type="video/mp4">
+    							Your browser does not support the video tag.
+							</video>
+							</a>
+							<div class="content">
+								<div class="inner">
+									<h2>Alignment</h2>
+									<p>Alignment is a crucial part to build an instrument for a precise measurement.</p>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="images/exposuretime.jpg" alt="" data-position="25% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Simulations</h2>
+									<p>Together with the spectrograph design, I made a simulation platform for sentivity analysis and exposure time calculator.
+									This simulation platform is highly robust that it can be tuned to work with different spectrographs at different wavelength range.
+									Figure shows well agreement between simulation and observation in case of FIDEOS, an optical spectrograph.
+									</p>
+									<ul class="actions">
+										<li><a href="SN_Calculation.html" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="images/fp.jpg" alt="" data-position="25% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Fabry Perot Interferometer</h2>
+									<p>This is the most recent project I am working on. With the FIOS team at Harvard, we are developing an instrument concept
+									for an ultra-high resolution application to study exoplanet atmospheres using transmission spectroscopy and a cross correlation
+									techniques.</p>
+									<ul class="actions">
+										<li><a href="https://ui.adsabs.harvard.edu/abs/2019EPSC...13.1059R/abstract" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+					</section>
+
+				<!-- Two -->
+					<section id="two" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>Projects</h2>
+							<p>List of the recent projects which included some my work at different phase of each project. </p>
+							<div class="features">
+								<section>
+									<span class="icon solid major fa-cog"></span>
+									<h3><a href="https://www.as.utexas.edu/astronomy/research/people/jaffe/igrins.html">IGRINS</h3>
+									<p>An Immersion Grating near infrared (H&K band) high resolution (R~40,000) spectrograph.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-cog"></span>
+									<h3><a href="http://www.aiuc.puc.cl/index.php/2015/07/08/fideos/">FIDEOS</h3>
+									<p>A dual fiber high resolution (R~40,000) visible spectrgraph at La Silla 1 m telescope.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-cog"></span>
+									<h3><a href="http://www.aiuc.puc.cl/index.php/2015/01/08/tardys/">TARdYS</h3>
+									<p>A Tao-Aiuc high resolution (R~66,000) near infrared Y-band spectrograph planned for the University of Tokyo Atacama 6.5 m telescope.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-cog"></span>
+									<h3><a href="https://stelweb.asu.cas.cz/plato/index.html">PLATOSPEC</h3>
+									<p>A high resolution (R~70,000) UV spectrograph for a ESO 1.5 m telescope planned to be a follow-up instrument for PLATO.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-cog"></span>
+									<h3><a href="https://ui.adsabs.harvard.edu/abs/2018ApJ...861...79B/abstract">FIOS</h3>
+									<p>An ultra-high resolution booster (R~600,000) based on Fabry Perot Interferometer for the next generation Extremely Large Telescopes, can be used for a focus study of exoplanets' biomarkers.</p>
+								</section>
+								<!---
+								<section>
+									<span class="icon solid major fa-gem"></span>
+									<h3>Other Interests</h3>
+									<p>Besides working on the design and development of exoplanet hunters. I am also interested in applications of high resolution spectroscopy and laboratory astrochemistry.</p>
+								</section> 
+								-->
+							</div>
+							
+						</div>
+					</section>
+
+				<!-- Three -->
+					<section id="three" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h2>Contact</h2>
+							<!p><!/p>
+												
+								<section>
+									<ul class="contact">
+										<li>
+											<h3>Address</h3>
+											<span>60 Garden Street MS-15<br />
+											Cambridge, MA 02138<br />
+											USA</span>
+										</li>
+										<li>
+											<h3>Email</h3>
+											<a href="mailto:surangkhana.rukdee@cfa.harvard.edu">surangkhana.rukdee@cfa.harvard.edu</a>
+											
+										</li>
+										<li>
+											<h3>Phone</h3>
+											<span>+1 (857) 320-8514</span>
+										</li>
+										<li>
+											<h3>Social</h3>
+											<ul class="icons">
+												<li><a href="https://twitter.com/Suri_rukdee" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+												
+												<li><a href="https://github.com/SurangkhanaRukdee" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+												
+												<li><a href="https://www.linkedin.com/in/surangkhana-rukdee-712a5866/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</section>
+							
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; 2019 Surangkhana Rukdee Buchner. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

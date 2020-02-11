@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic - Hyperspace by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title"></a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="generic.html" class="active">About Me</a></li>
+						<li><a href="https://ui.adsabs.harvard.edu/search/q=author%3A%22Rukdee%2C%20Surangkhana%22&sort=date%20desc%2C%20bibcode%20desc&p_=0"  class="active">Publication</a></li>
+						<li><a href="cv.html">CV</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">About Me</h1>
+							<span class="image fit"><img src="images/Concept_cloud.jpg" alt="" /></span>
+							<p>I am a postdoc at the Center for Astrophysics | Harvard & Smithsonian since Nov. 2018. I work as an astronomical instrumentalist. My research interests include high resolution spectroscopy in UV, optical and infrared for searching and characterizing exoplanets and their atmospheres, extreme precise radial velocity measurements and Fabry Perot Interferometers. I am currently developing a new Fabry Perot based instrument for oxygen searches in exoplanet atmospheres, with the G-CLEF team at Harvard. </p>
+							<p>I received my B.Sc. in Physics and Material Science with a joint program in Geology from Chiang Mai University, Thailand, 
+							my M.Sc. in Astronomy and Space Science at the Korean Astronomy and Space Science Institute. I did my PhD in an astro-engineering 
+							program with Prof. Leonardo Vanzi at Pontificia Universidad Católica de Chile. Our team work focuses on the design and development of exoplanet hunters such as
+							FIDEOS, TARdYS and PLATOSPEC.</p>
+							<p>I like cooking, swimming and dancing in my free time. I also enjoy cycling, hiking and camping with my husband if he is around.</p>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; 2019 Surangkhana Rukdee Buchner. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
